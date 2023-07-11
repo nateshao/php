@@ -18,11 +18,11 @@ $total_page = ceil($total_num/$perpage); //计算总页数
 $page = max($page,1); //判断当前页是否小于1
 $page = min($page,$total_page); //判断当前页码数是否大于总页数
 
-//获取遍历学生数组时，每页开始的数组坐标值
+// 获取遍历学生数组时，每页开始的数组坐标值
 $start_index = $perpage * ($page-1);
-//获取遍历学生数组时，每页最大的数组坐标值
+// 获取遍历学生数组时，每页最大的数组坐标值
 $end_index = $perpage * $page-1;
-//防止计算结果超过最大记录数
+// 防止计算结果超过最大记录数
 $end_index = min($end_index,$total_num-1);
 
 //载入模板

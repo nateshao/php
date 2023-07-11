@@ -48,7 +48,7 @@ echo "<br>";
 
 
 $a = 'hello';
-$hello = 'PHP';
+$hello = '千羽的编程时光';
 $PHP = 'best';
 echo $a;           //输出结果： hello
 echo "<br>";
@@ -61,7 +61,7 @@ echo $$$a;         //输出结果： best
 <!--① define()函数-->
 <?php
 
-define('CON', 'php');      //定义名称为CON的常量，其值为php
+define('CON', '千羽的编程时光');      //定义名称为CON的常量，其值为php
 echo CON;                  // 输出结果：php
 
 ?>
@@ -86,7 +86,7 @@ echo PHP_OS;           // 输出结果：WINNT
 echo "<br>";
 
 $var = 100;      // 在此处定义变量$var
-$str = 'php';    // 在此处定义变量$str
+$str = '千羽的编程时光';    // 在此处定义变量$str
 function test()
 {
     //方式1：利用global关键字取得全局变量
