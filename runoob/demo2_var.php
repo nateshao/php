@@ -82,6 +82,21 @@ echo "<br>";
 echo PHP_VERSION;      //输出结果：5.6.19
 echo "<br>";
 echo PHP_OS;           // 输出结果：WINNT
+
+echo "<br>";
+
+$var = 100;      // 在此处定义变量$var
+$str = 'php';    // 在此处定义变量$str
+function test()
+{
+    //方式1：利用global关键字取得全局变量
+    global $var; // 全局变量用global修饰
+    echo '全局变量$var：' . $var;
+    //方式2：利用$GLOBALS['变量名']访问
+    echo '全局变量$str：' . $GLOBALS['str'];
+}
+
+test();
 ?>
 
 
