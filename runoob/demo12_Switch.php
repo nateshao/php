@@ -13,4 +13,11 @@ switch ($favcolor) {
     default:
         echo "你喜欢的颜色不是 红, 蓝, 或绿色!";
 }
+
+echo "<br>";
+
+$i = 5;
+do{
+    echo $i--; //循环输出54321
+}while( $i> 0 );
 ?>
