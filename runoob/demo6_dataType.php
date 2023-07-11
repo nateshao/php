@@ -90,6 +90,15 @@ echo get_resource_type($fp) . "\n";
 $doc = new_xmldoc("1.0");
 echo get_resource_type($doc->doc) . "\n";
 // 打印：domxml document
+
+
+
+//5. 查看数据类型
+
+$number = 1234;
+$flag = true;
+var_dump($number);  //输出结果：int(1234)
+var_dump($flag);    //输出结果：bool(true)
 ?>
 
 

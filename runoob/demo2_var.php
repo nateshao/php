@@ -66,6 +66,24 @@ echo CON;                  // 输出结果：php
 
 ?>
 
+<!-- ② const关键字 -->
+<!-- ② const关键字 -->
+<!-- ② const关键字 -->
+<?php
+const PAI = 3.14;    //定义名字为PAI的常量，其值为3.14
+echo "<br>";
+echo PAI;            // 输出结果：3.14
+echo "<br>";
+?>
+<!-- （4）预定义常量 -->
+
+<?php
+//（4）预定义常量
+echo PHP_VERSION;      //输出结果：5.6.19
+echo "<br>";
+echo PHP_OS;           // 输出结果：WINNT
+?>
+
 
 
 
