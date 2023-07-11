@@ -1,9 +1,12 @@
 <!--https://www.runoob.com/php/php-ref-string.html-->
+<!--http://www.php.net/manual/zh/index.php-->
+
 <!--PHP 5 String 函数-->
 
 
 <!-- PHP 字符串变量
 字符串变量用于存储并处理文本。 -->
+
 <?php
 $txt = "Hello world!";
 echo $txt;
@@ -89,6 +92,22 @@ echo "<br>";
 echo floor(7.8);    // 输出结果：7
 echo "<br>";
 echo rand(1, 20);   // 随机输出1～20的整数
+/**
+ * ceil()函数是对浮点数5.2进行向上取整，floor()函数是对浮点数进行向下取整，
+ * rand()函数的参数表示随机数的范围，第1个参数表示最小值，第2个参数表示最大值。
+ */
+
+echo "------------------------------- 日期函数 -----------------------------";
+echo "<br>";
+echo date('Y-m-d H:i:s');       //输出结果：2015-08-21 15:33:07
+echo "<br>";
+echo date('Y-m-d', 1440142043); // 输出结果：2015-08-21
+/**
+ * 官方网站（http://www.php.net/manual/zh/index.php），可以看到PHP手册的首页界面。
+ * 接着在search（搜索）栏中输入要查找的函数名称，然后按回车键，就会显示该函数的详细信息
+ */
+
+
 
 
 ?>
