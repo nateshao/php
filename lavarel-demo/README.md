@@ -105,6 +105,11 @@ App 目录：核心代码
 
 
 
+```php
+php artisan make:controller UserController
+Controller created successfully.
+
+```
 
 
 
