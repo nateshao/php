@@ -118,6 +118,32 @@ class WX extends Controller
         /**
          * join
          */
+        /**
+         *
+         * Inner Join 语句
+         */
+        DB::table("users")
+            ->join("contact", "user.id", "=", "contacts.user_id")
+            ->join("orders", "users.id", "=", "orders_user_id")
+            ->select("users.*", "contacts.phone", "orders.price")
+            ->get();
+
+
+        /**
+         * Left Join / Right Join 语句
+         */
+
+
+        DB::table("users")
+            ->leftJoin("posts", "users.id", "=", "post.user_id")
+            ->get();
+
+        DB::table("users")
+            ->rightJoin("posts", "users.id", "=", "posts.user_id")
+            ->get();
+        /**
+         * Cross Join 语句
+         */
 
     }
 
