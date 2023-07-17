@@ -20,3 +20,28 @@
    1. 官网：https://learnku.com/docs/laravel/7.x/installation/7447
    2. composer global require laravel/installer
    3. composer create-project --prefer-dist laravel/laravel lavarel-demo
+
+
+
+## lavarel框架
+
+1.创建：php artisan make:controller TestController
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

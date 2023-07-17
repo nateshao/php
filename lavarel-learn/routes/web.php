@@ -26,5 +26,6 @@ Route::group([], function () {
     Route::get("test3", function () {
         // 匹配"/admin/test3" URL
     });
+    Route::get("index/test","TestController@index");
 });
 
