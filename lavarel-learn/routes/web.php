@@ -16,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home/index',function (){
+   echo "<h2>PHP是世界上最好的语言!!</h2>";
+});
+
+Route::get('/home/test/add', 'TestController@add');
+Route::get('/home/test/del', 'TestController@del');
+Route::get('/home/test/update', 'TestController@update');
+Route::get('/home/test/select', 'TestController@select');
+
+
 Route::group([], function () {
     Route::get("test1", function () {
         // 匹配"/admin/test1" URL
@@ -29,10 +39,5 @@ Route::group([], function () {
     Route::get("index/test", "TestController@index");
 //    Route::group(['prefix' => 'home/test'], function () {
 //    });
-
-    Route::get('/home/test/add', 'TestController@add');
-    Route::get('/home/test/del', 'TestController@del');
-    Route::get('/home/test/update', 'TestController@update');
-    Route::get('/home/test/select', 'TestController@select');
 });
 
